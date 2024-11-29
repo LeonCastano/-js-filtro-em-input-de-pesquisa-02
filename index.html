@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta item="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Filtro em Input de Pesquisa - 02</title>
-</head>
-
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
     <input type="text" id="entrada" />
     <button onclick="gerarLista()">OK</button>
 
@@ -17,6 +15,8 @@
         var vetor = [];
         const entrada = document.getElementById('entrada');
         const lista = document.getElementById('lista');
+        localStorage.setItem(vetor);
+        let myItem = localStorage.getItem(vetor);
 
         function gerarLista() {
             adicionarElemento();
